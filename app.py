@@ -41,8 +41,8 @@ def Input_Output():
     data = st.file_uploader('ipload file', type={'csv', 'txt'})
     if data is not None:
         df = pd.read_csv(data)
-        model = absenteeism_model(r'C:\Users\98918\Desktop\Employee absenteeism\model')
-        model.load_and_clean_data(r'C:\Users\98918\Desktop\Employee absenteeism\Absenteeism_new_data.csv')
+        model = absenteeism_model('model')
+        model.load_and_clean_data('Absenteeism_new_data.csv')
     result = ''
     if st.button('Click here to Predict'):
         result = model.predicted_outputs()
