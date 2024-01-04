@@ -20,7 +20,7 @@
 
 
 # In[4]:
-!pip install scikit-learn
+pip install scikit-learn
 
 
 # import all libraries needed
