@@ -4,7 +4,6 @@
 # # absenteeism_module
 
 # In[1]:
-!pip install scikit-learn
 
 # import all libraries needed
 import numpy as np
