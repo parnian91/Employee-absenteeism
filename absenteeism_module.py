@@ -17,7 +17,7 @@ class absenteeism_model():
       
         def __init__(self, model_file):
             # read the 'model' file which is saved
-            with open(r'C:\Users\98918\Desktop\Employee absenteeism\model','rb') as model_file:
+            with open('model','rb') as model_file:
                 self.reg = pickle.load(model_file)
                 self.data = None
         
